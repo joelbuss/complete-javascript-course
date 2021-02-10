@@ -44,37 +44,67 @@ Your tasks:
 Test data:
     Data 1: Marks weights 78 kg and is 1.69 m tall. John weights 92 kg and is 1.95
     m tall.
-    let markWeight1 = '78';
-    let markHeight1 = '1.69 ';
-    let johnWeight1 = '92'; 
-    let johnHeight1 = '1.95'; 
+    let massMark = '78';
+    let heightMark = '1.69 ';
+    let massJohn = '92'; 
+    let heightJohn = '1.95'; 
 
-    const markBMI1 =  markWeight1 / (markHeight1 ** 2); 
-    console.log(markBMI1); 
-    const johnBMI1 = johnWeight1 / (johnHeight1 ** 2); 
-    console.log(johnBMI1); 
-
-    const markHigherBMI = markBMI1 > johnBMI1; 
-    console.log(true); 
-
-    // Data 2: Marks weights 95 kg and is 1.88 m tall. John weights 85 kg and is 1.76
-    // m tall.
-    let markWeight2 = '95';
-    let markHeight2 = '1.88 ';
-    let johnWeight2 = '85'; 
-    let johnHeight2 = '1.76';
-    
-    const markBMI2 = markWeight2 / (markHeight2 ** 2); 
-    console.log(markBMI2); 
-    const johnBMI2 = johnWeight2 / (johnHeight2 ** 2); 
-    console.log(johnBMI2); 
-
-    const johnHigherBMI = (johnBMI2 > markBMI2); 
-    console.log(true); 
-    */
-
+    const markBMI =  massMark / (heightMark ** 2); 
+    console.log(markBMI); 
+    const johnBMI = massJohn / (heightJohn ** 2); 
+    console.log(johnBMI); 
+    const markHigherBMI = markBMI > johnBMI; 
     
 
+const age = 15; 
 
+if (age >= 18) { 
+    console.log('Sarah can start driving license 🚗'); 
+} else { 
+    const yearsLeft = 18 - age; 
+    console.log(`Sara is too young. Wait another ${yearsLeft} years :)`);
+}
+
+const birthYear = 2012; 
+
+let century; 
+if(birthYear <= 2000) {
+    century = 20; 
+} else {
+    century = 21;
+}
+console.log(century); 
+
+// CODING CHALLENGE #2
+
+    let massMark = '78';
+    let heightMark = '1.69';
+    let massJohn = '92'; 
+    let heightJohn = '1.95'; 
+
+    const markBMI =  massMark / (heightMark ** 2); 
+    console.log(markBMI); 
+    const johnBMI = massJohn / (heightJohn ** 2); 
+    console.log(johnBMI); 
     
+if(markBMI >= johnBMI) { 
+    console.log(`Mark's BMI (${markBMI}) is higher than John's (${johnBMI}).`)
+} else { 
+    console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI}).`)
+}
+*/
+// Type Conversion
+const inputYear = '1991'; 
+console.log(Number(inputYear), inputYear); 
+console.log(Number(inputYear) + 18); 
 
+console.log(Number('Jonas')); 
+console.log(typeof NaN); 
+
+console.log(String(23), 23); 
+
+// Type Coercion 
+console.log('I am ' + 23 + 'years old')
+console.log('23' - '10' - 3);
+console.log('23' / '2'); 
+console.log('23' > '18'); 
