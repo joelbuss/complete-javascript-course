@@ -92,7 +92,7 @@ if(markBMI >= johnBMI) {
 } else { 
     console.log(`John's BMI (${johnBMI}) is higher than Mark's (${markBMI}).`)
 }
-*/
+
 // Type Conversion
 const inputYear = '1991'; 
 console.log(Number(inputYear), inputYear); 
@@ -108,3 +108,4 @@ console.log('I am ' + 23 + 'years old')
 console.log('23' - '10' - 3);
 console.log('23' / '2'); 
 console.log('23' > '18'); 
+*/
